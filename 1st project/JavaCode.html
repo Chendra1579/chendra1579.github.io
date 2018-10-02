@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaCode</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<h1>Temperature bug</h1>
+<div class="topnav">
+    <a href="index.html">Wes</a>
+    <a href="#Family.html">family</a>
+    <a href="#ThisPageIsJustForFun.html">Friends</a>
+    <a class="active" href="#Javacode.html">Friends</a>
+</div>
+<form name="project1">
+first number: <input type="number" name="num" placeholder="type Temperature here">
+<br>
+Results: <input type="text" name="result" readonly="true" placeholder="...waiting" size="100">
+<BR><BR><BR>
+<button type="button" onclick="document.project1.result.value=temp()">Season</button>
+</form>
+<form name="project2">
+    <h4>Calorie Counter</h4>
+    <br><br>
+    Activity: 'jog','swim','golf','vg'(video games),'Baseball'
+    <br>
+    please input an activity to continue: <input type="text" name = "type">
+    <br>
+    Time(hours):'1','2','3',etc
+    <br>
+    please input a Time to continue: <input type="number" name = "Time">
+    <br>
+    <button type="button" onclick="document.project2.results.value=workOut()">TIME TO WORK!</button>
+    <input type="text" readonly="true" name="results" style="border-style: groove">
+</form>
+<form name="project3">
+    <h4>Assign Grade</h4>
+    <br><br>
+    please type a Grade to continue: <input type="Number" name = "Num">
+    <br>
+    <button type="button" onclick="document.project3.result.value= grade()">ASSIGN!</button>
+    <input type="number" readonly="true" name="result" style="border-style: groove">
+</form>
+</body>
+</html>
