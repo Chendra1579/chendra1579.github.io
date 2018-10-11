@@ -25,7 +25,7 @@ function temp()
 }
 function workOut()
     {
-        var work = document.project2.type.value;
+         var work = document.project2.type.getSelection.value;
         var min= Number(document.project2.Time.value);
         //create logic that outputs "hello world" different depending on language selected
         if (work == 'jog' ) //case of jog
