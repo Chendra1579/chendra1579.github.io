@@ -10,9 +10,10 @@
 <h1>Temperature bug</h1>
 <div class="topnav">
     <a href="index.html">Wes</a>
-    <a href="#Family.html">family</a>
-    <a href="#ThisPageIsJustForFun.html">Friends</a>
-    <a class="active" href="#Javacode.html">Friends</a>
+    <a href="Family.html">family</a>
+    <a href="ThisPageIsJustForFun.html">Friends</a>
+    <a href="binary.html">binary</a>
+    <a class="active" href="#javacode.html">java</a>
 </div>
 <form name="project1">
 first number: <input type="number" name="num" placeholder="type Temperature here">
@@ -21,32 +22,32 @@ Results: <input type="text" name="result" readonly="true" placeholder="...waitin
 <BR><BR><BR>
 <button type="button" onclick="document.project1.result.value=temp()">Season</button>
 </form>
+<form name="project3">
+    first number: <input type="number" name="percentage" placeholder="type Temperature here">
+    <br>
+    Results: <input type="text" name="result2" readonly="true" placeholder="...waiting" size="100">
+    <BR><BR><BR>
+    <button type="button" onclick="document.project3.result2.value=grade()">Season</button>
+</form>
+
+
 <form name="project2">
     <h4>Calorie Counter</h4>
     <br><br>
     Activity: 'jog','swim','golf','vg'(video games),'Baseball'
-        <select id="type">
-            <option value="jog">jog</option>
-            <option value="swim">swim</option>
-            <option value="golf">golf</option>
-            <option value="vg">vg</option>
-            <option value="Baseball">Baseball</option>
-        </select>
+    Time: <input type="text" name="cal" placeholder="type calorie here">
     <br>
-    Time(hours):'1','2','3',etc
+    Time: <input type="number" name="TimeNum" placeholder="type time here">
     <br>
-    please input a Time to continue: <input type="number" name = "Time">
-    <br>
-    <button type="button" onclick="document.project2.results.value=workOut()">TIME TO WORK!</button>
-    <input type="text" readonly="true" name="results" style="border-style: groove">
+    Results: <input type="text" name="result3" readonly="true" placeholder="...waiting" size="100">
+    <BR><BR><BR>
+    <button type="button" onclick="document.project2.result3.value=working()">Burn</button>
 </form>
-<form name="project3">
-    <h4>Assign Grade</h4>
-    <br><br>
-    please type a Grade to continue: <input type="Number" name = "Num">
-    <br>
-    <button type="button" onclick="document.project3.result.value= grade()">ASSIGN!</button>
-    <input type="number" readonly="true" name="result" style="border-style: groove">
+
+
+<form name="primeNumber">
+    <button type="button" onclick="isPrime()">Prime</button>
+    first number: <input type="number" name="pNum" placeholder="Put number here">
 </form>
 </body>
 </html>

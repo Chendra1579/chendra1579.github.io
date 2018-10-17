@@ -78,3 +78,7 @@ picture
     align-self: center;
     margin-left: 850px;
 }
+input
+{
+    align-items: center;
+}
