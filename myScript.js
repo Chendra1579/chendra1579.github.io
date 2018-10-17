@@ -25,7 +25,7 @@ function temp()
 }
 function working()
     {
-        var work = document.project2.cal.value;
+        var work = document.getElementById('activities').value;
         var min= Number(document.project2.TimeNum.value);
         //create logic that outputs "hello world" different depending on language selected
         if (work == 'jog' ) //case of jog
