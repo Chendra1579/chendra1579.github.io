@@ -25,13 +25,13 @@ function smallToTen(num,base)//convert a small base number to base-10
 
 
     while (num) {
-        var denominater = math.pow(10, (numLength - 1)); //gets denominator of fraction
+        var denominator = math.pow(10, (numLength - 1)); //gets denominator of fraction
         //for 1101, denominators will be 1000, 100 ,10, 1
-        var currentDigit = Math.floor(num / denominater); //captures a 1 or0 to multiply by 2^numLength
+        var currentDigit = Math.floor(num / denominator); //captures a 1 or0 to multiply by 2^numLength
         //above means 1101,1000...101/100=1.... 01/10=0....1/1=1....
         tenNum = tenNum + currentDigit * Math.pow(base, numLength - 1);
         //currentDigit*2^3.... currentDigit*2*1 etc.
-        num = num % denominater; //reduces num for next iteration...
+        num = num % denominator; //reduces num for next iteration...
         //1101 -> 01 -> 1 ->0
         numLength--; //decrease the numLength value by 1... eventually it will hit zero
     }
