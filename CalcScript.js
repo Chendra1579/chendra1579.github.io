@@ -5,9 +5,26 @@ function calculate(expression)
     //we need to EXTRACT the first number from the 'expression'
     //expression = 1+2
 
-    var firstNum = Number(expression.substr(0,1))
+    var firstNum = Number(expression.substr(0,1));
     var operator= expression.substr(1,1);   // capture  the '+'
     var secondNum = Number(expression.substr(2,1));
+    var numLength = expression.length;
+
+    if (numLength > 3)
+    {
+        x = 0;
+        var testNum = Number(expression.substr(x,1));
+        while(testNum % 1 === 0)
+        {
+            x= x+1;
+            testNum = Number(expression.substr(x,1));
+        }
+        firstNum= Number(expression.substr(0,x));
+        operator= expression.substr(x,1);
+        secondNum=Number(expression.substr(x+1, numLength-(x+1)));
+
+    }
+    // credit jacob
 
     if (operator === '+') // that means I add firstNum & secondNum
     {
