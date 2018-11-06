@@ -18,10 +18,18 @@
 <br>
 <br>
 <form name="toBinary">
+    Base ten to Base two
     <input name="origin" placeholder="put number here to convert">
-    <input name="typeOfBase" placeholder="type the base the number is">
-    <input name="newBase" placeholder="put new base">
     <button type="button" onclick="document.toBinary.result.value=tenToSmall()">to Binary</button>
+
+    <input name="result" readonly="true">
+</form>
+<form name="toBaseTen">
+    <br>
+    <br>
+    Base two to Base ten
+    <input name="baseTwoOrigin" placeholder="put number here to convert">
+    <button type="button" onclick="document.toBaseTen.result.value=smallToTen()">to Binary</button>
 
     <input name="result" readonly="true">
 </form>
