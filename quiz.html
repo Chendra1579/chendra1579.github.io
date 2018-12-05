@@ -36,7 +36,8 @@
     <input type="checkbox" name="ans3d" value="Japan">Japan<br>
     <input type="checkbox" name="ans3e" value="Brazil">Brazil<br>
 
-    <button type="button" onclick="checkAns()">Check Answers</button>
+    <button type="button" onclick="document.getElementById('Score').innerHTML=checkAns()">Check Answers</button>
+    <p id="Score"> </p>
 </form>
 </body>
 </html>
