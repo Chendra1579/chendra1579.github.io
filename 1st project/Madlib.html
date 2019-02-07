@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLibs</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<script type="text/javascript">
+    function array1()
+    {
+        var words=[];
+        //alert(document.getElementById('name1').innerHTML);
+        words.push(document.board.name1.value);
+        words.push(document.board.name2.value);
+        words.push(document.board.ruler.value);
+        words.push(document.board.adj1.value);
+        words.push(document.board.adj2.value);
+        words.push(document.board.adj3.value);
+        words.push(document.board.sound.value);
+        words.push(document.board.place.value);
+
+        //alert(words);
+        return "there once was a guy called " + words[0] + " and he had a mission given him by the king "+
+            words[2] + " of the land of "+ words[7] +" and his mission was to slay the evil man named " + words[1] +
+            " who was " + words[3] +" however with a, " + words[6] + "he slipped and died." + words[0] + "was confused " +
+            "so don't do drugs or you will be eternally "+ words[5];
+    }
+
+
+</script>
+
+
+<body>
+
+
+<div class="topnav">
+    <a href="index.html">Wes</a>
+    <a href="Family.html">family</a>
+    <a href="JavaCode.html">java</a>
+    <a href="binary.html">binary</a>
+    <a href="#ThisPageIsJustForFun.html">Friends</a>
+    <a href="Calc.html">Calculator</a>
+    <a class="active" href="Madlib.html">Friends</a>
+    <a href="quiz.html">Quiz</a>
+</div>
+<a href="Canvas.html">Canvas</a>
+
+<form name="board">
+    <BR><BR>
+    <h4>Person you know:</h4><input type="text" name="name1">
+    <br>
+    <h4>Person you Hate:</h4><input  type="text" name="name2">
+    <br>
+    <h4>Adjective 1:</h4><input type="text" name="adj1">
+    <br>
+    <h4>Adjective 2:</h4><input type="text" name="adj2">
+    <br>
+    <h4>Adjective 3:</h4><input type="text" name="adj3">
+    <br>
+    <h4>Funny sound</h4><input  type="text" name="sound">
+    <br>
+    <h4>place:</h4><input  type="text" name="place">
+    <br>
+    <h4>A Name:</h4><input type="text" name="ruler" >
+    <br>
+    <button type="button" onclick=document.getElementById('story').innerHTML=array1()>Array Test</button>
+    <br>
+    <p id="story"> </p>
+</form>
+
+</body>
+</html>
