@@ -12,6 +12,11 @@ function checkAns()
         alert("please fill in input 1")
 
     }
+    function drawImage(){
+        var pic1 = new Image();
+        pic1.src= "img/earth_PNG35.png";
+    
+    }
     else {
 
 
