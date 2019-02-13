@@ -61,6 +61,10 @@ function drawShapes()
     drawRectangles();
     initialized();
 }
+function drawImage()
+{
+    
+}
 
 var a;// this will reference the animation function
 var iX = 360;
