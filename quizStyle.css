@@ -39,3 +39,7 @@ picture
     align-self: center;
     margin-left: 850px;
 }
+
+#myCanvas {
+    border: 2px solid #000000;
+}
